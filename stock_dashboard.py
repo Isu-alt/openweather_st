@@ -69,7 +69,7 @@ def main():
 
             #MAPS
             st.subheader("Weather Map")
-            st.map(df['lat', 'lon'])
+            st.map(df[['lat', 'lon']])
 
     else:
         st.error("No data!")
@@ -77,4 +77,5 @@ def main():
 
 if __name__=="__main__":
     main()
+
 
